@@ -106,26 +106,8 @@ body,html {
 }
 
 #tournament {
-    margin: 20px;
-    font-family: 'Comfortaa', sans-serif;
-}
-
-.bracket {
-    display: flex;
-    justify-content: center;
-}
-
-.round {
-    margin-right: 40px;
-}
-
-.match {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
+    margin:4vh 0px !important;
+    padding:2vh 0px !important;
 
 #board {
     margin:4vh 0px !important;
