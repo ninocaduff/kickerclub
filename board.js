@@ -3,21 +3,24 @@ $(document).ready(function() {
 });
 
 function loadBoardMembers() {
-    // Simulated data loading
+    // Example data - replace with actual data
     const boardMembers = [
-        { name: "John Doe", role: "President", image: "path/to/image1.jpg" },
-        { name: "Jane Smith", role: "Vice President", image: "path/to/image2.jpg" },
-        { name: "Emily Johnson", role: "Secretary", image: "path/to/image3.jpg" },
-        { name: "Mike Brown", role: "Treasurer", image: "path/to/image4.jpg" }
+        { name: "John Doe", role: "President", image: "path_to_image_of_member1.jpg" },
+        { name: "Jane Smith", role: "Vice President", image: "path_to_image_of_member2.jpg" },
+        // More members...
     ];
 
+    // Empty the container before adding new content
+    $('#board').empty();
+
+    // Dynamically add each member's profile to the board container
     boardMembers.forEach(member => {
-        $('#board').append(
-            `<div class="member">
+        const memberHTML = `
+            <div class="member">
                 <img src="${member.image}" alt="Profile of ${member.name}">
                 <h2>${member.name}</h2>
                 <p>${member.role}</p>
-            </div>`
-        );
+            </div>`;
+        $('#board').append(memberHTML);
     });
 }
