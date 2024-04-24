@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board Members</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Board Members - Kicker Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="board.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <div class="board-container">
-        <h1>Board Members</h1>
-        <div class="member">
-            <img src="path_to_member_image.jpg" alt="Member Name">
-            <h2>Member Name</h2>
-            <p>Position</p>
+    <div id="header" class="animated slideInDown" style="animation-delay: 1.8s;">
+        <div id="title">Kicker Club</div><br>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="#board">Board</a>
+            <a href="index.html#contact">Contact</a>
         </div>
-        <div class="member">
-            <img src="path_to_member_image.jpg" alt="Member Name">
-            <h2>Member Name</h2>
-            <p>Position</p>
-        </div>
-        <!-- Repeat the above div for each member or add more as needed -->
     </div>
+
+    <center>
+        <div id="board" class="board-container">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </center>
+
+    <script src="board.js"></script>
 </body>
 </html>
