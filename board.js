@@ -1,22 +1,33 @@
 $(document).ready(function(){
-    // Example: Load board members dynamically or any specific interactions
-    loadBoardMembers();
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('body,html').animate({
+      scrollTop: $(hash).offset().top
+      }, 1200, function(){
+      window.location.hash = hash;
+     });
+     } 
+    });
 });
 
-function loadBoardMembers() {
-    // Simulated data loading
-    const boardMembers = [
-        { name: "John Doe", role: "President", image: "path/to/image.jpg" },
-        { name: "Jane Smith", role: "Vice President", image: "path/to/image.jpg" }
-    ];
+var width = $(window).width(); 
 
-    boardMembers.forEach(member => {
-        $('#board').append(
-            `<div class="member">
-                <img src="${member.image}" alt="Profile of ${member.name}">
-                <h2>${member.name}</h2>
-                <p>${member.role}</p>
-            </div>`
-        );
-    });
+window.onscroll = function(){
+if ((width >= 900)){
+    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        $("#middle").css("background-size","150% auto");
+    }else{
+        $("#middle").css("background-size","100% auto");        
+    }
 }
+};
+
+setTimeout(function(){
+    $("#loading").addClass("animated fadeOut");
+    setTimeout(function(){
+      $("#loading").removeClass("animated fadeOut");
+      $("#loading").css("display","none");
+    },800);
+},1450);
