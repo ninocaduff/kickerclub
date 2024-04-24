@@ -9,6 +9,9 @@ function loadBoardMembers() {
         { name: "John Doe", role: "President", image: "path_to_image_of_member1.jpg" },
         // Other members...
     ];
+    
+    // Empty the container before adding new content
+    $('#board').empty();
 
     // Dynamically generate and append member information to the board container
     boardMembers.forEach(member => {
