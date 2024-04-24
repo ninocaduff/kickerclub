@@ -214,10 +214,10 @@ body,html {
 .board-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 50px auto;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Take up the full viewport height */
+    margin: 0 auto; /* Center the container itself if needed */
     text-align: center;
 }
 
