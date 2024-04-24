@@ -6,8 +6,9 @@ $(document).ready(function() {
 function loadBoardMembers() {
     // Example member data
     const boardMembers = [
-        { name: "John Doe", role: "President", image: "path_to_image_of_member1.jpg" },
-        // Other members...
+        { name: "Mark Akhmetov", role: "President", image: "path_to_image_of_member1.jpg" },
+        { name: "Nino Caduff", role: "Head of Events", image: "path_to_image_of_member1.jpg" },
+        { name: "Philipp Weber", role: "Head of Partnerships", image: "path_to_image_of_member1.jpg" },
     ];
     
     // Empty the container before adding new content
