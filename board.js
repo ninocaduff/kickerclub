@@ -1,33 +1,23 @@
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('body,html').animate({
-      scrollTop: $(hash).offset().top
-      }, 1200, function(){
-      window.location.hash = hash;
-     });
-     } 
-    });
+$(document).ready(function() {
+    loadBoardMembers();
 });
 
-var width = $(window).width(); 
+function loadBoardMembers() {
+    // Simulated data loading
+    const boardMembers = [
+        { name: "John Doe", role: "President", image: "path/to/image1.jpg" },
+        { name: "Jane Smith", role: "Vice President", image: "path/to/image2.jpg" },
+        { name: "Emily Johnson", role: "Secretary", image: "path/to/image3.jpg" },
+        { name: "Mike Brown", role: "Treasurer", image: "path/to/image4.jpg" }
+    ];
 
-window.onscroll = function(){
-if ((width >= 900)){
-    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        $("#middle").css("background-size","150% auto");
-    }else{
-        $("#middle").css("background-size","100% auto");        
-    }
+    boardMembers.forEach(member => {
+        $('#board').append(
+            `<div class="member">
+                <img src="${member.image}" alt="Profile of ${member.name}">
+                <h2>${member.name}</h2>
+                <p>${member.role}</p>
+            </div>`
+        );
+    });
 }
-};
-
-setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
-    setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
-    },800);
-},1450);
