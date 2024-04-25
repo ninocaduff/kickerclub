@@ -11,7 +11,7 @@ function loadBoardMembers() {
         { name: "Nino Caduff", role: "Head of Events & IT", image: "https://raw.githubusercontent.com/ninocaduff/kickerclub/master/board/board_photo_nino.jpg" },
         { name: "Philipp Weber", role: "Head of Partnerships", image: "path_to_image_of_member1.jpg" },
         { name: "Alessandro Giordano", role: "Head of Legal & Merch", image: "path_to_image_of_member1.jpg" },
-        { name: "Nils Nguyen", role: "Head of Finance", image: "path_to_image_of_member1.jpg" },
+        { name: "Nils Nguyen", role: "Head of Finance", image: "https://raw.githubusercontent.com/ninocaduff/kickerclub/master/board/board_photo_nils.jpg" },
     ];
     
     // Empty the container before adding new content
