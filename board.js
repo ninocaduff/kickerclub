@@ -9,7 +9,7 @@ function loadBoardMembers() {
         { name: "Mark Akhmetov", role: "President", image: "path_to_image_of_member1.jpg" },
         { name: "Moritz Reher", role: "Vice President", image: "path_to_image_of_member1.jpg" },
         { name: "Nino Caduff", role: "Head of Events & IT", image: "https://raw.githubusercontent.com/ninocaduff/kickerclub/master/board/board_photo_nino.jpg" },
-        { name: "Philipp Weber", role: "Head of Partnerships", image: "path_to_image_of_member1.jpg" },
+        { name: "Philipp Weber", role: "Head of Partnerships", image: "https://raw.githubusercontent.com/ninocaduff/kickerclub/master/board/board_photo_philipp.jpg" },
         { name: "Alessandro Giordano", role: "Head of Legal & Merch", image: "https://raw.githubusercontent.com/ninocaduff/kickerclub/master/board/board_photo_alessandro.jpg" },
         { name: "Nils Nguyen", role: "Head of Finance", image: "https://raw.githubusercontent.com/ninocaduff/kickerclub/master/board/board_photo_nils.jpeg" },
     ];
