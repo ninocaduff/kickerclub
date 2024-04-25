@@ -33,7 +33,7 @@ body, html {
 
 .board-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full height to center vertically */
@@ -65,6 +65,9 @@ body, html {
 
 /* Responsive design adjustments */
 @media (max-width: 900px) {
+    .board-container {
+        justify-content: flex-start; /* Added to align items to the left in smaller screens */
+    }
     #header {
         padding: 15px 0;
     }
