@@ -41,9 +41,16 @@ body, html {
 }
 
 .member {
-    flex: 0 0 calc(33.33% - 20px); /* Adjusts the width of each member box, subtract gap */
-    /* If gap is not supported with flexbox, use margins instead */
-    margin: 10px; /* Half of the gap size */
+    flex: 0 1 calc(33.333% - 40px);
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
 }
 
 .member img {
