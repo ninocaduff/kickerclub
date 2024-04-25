@@ -33,14 +33,16 @@ body, html {
 
 .board-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height to center vertically */
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 70px;
+    gap: 20px;
 }
 
 .member {
+    flex: 0 1 calc(33.333% - 40px);
+    margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.1);
     margin: 20px;
     padding: 20px;
@@ -66,7 +68,10 @@ body, html {
 /* Responsive design adjustments */
 @media (max-width: 900px) {
     .board-container {
-        justify-content: flex-start; /* Added to align items to the left in smaller screens */
+        justify-content: center;
+    }
+    .member {
+            flex: 0 1 100%;
     }
     #header {
         padding: 15px 0;
