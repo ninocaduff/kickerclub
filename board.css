@@ -69,7 +69,6 @@ body, html {
 
 .member-info {
     display: none; /* Initially hide the additional info */
-    position: absolute; /* Position the info over the member image */
     top: 0;
     left: 0;
     right: 0;
