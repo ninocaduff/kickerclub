@@ -9,15 +9,30 @@ body, html {
 }
 
 #header {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed; /* Keep header at the top */
-    top: 0; /* Position at the top */
-    left: 0; /* Align left */
-    transition: padding 0.6s ease-in-out;
-    z-index: 1000; /* Make sure the header is above other items */
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Vertical padding, no horizontal padding */
+    text-align: center; /* Center-align the text inside the header */
+    position: sticky; /* Stick to the top of the viewport as you scroll */
+    top: 0; /* Stay at the top */
+    left: 0; /* Align to the left edge */
+    background-color: #333; /* Optional: dark background for better visibility */
+    color: white; /* White text color */
+    transition: padding 0.6s ease-in-out; /* Smooth transition for padding changes */
+    z-index: 1000; /* High z-index to ensure it stays on top of other content */
 }
+
+
+#header {
+    width: 100%; /* Adjust width as necessary */
+    position: sticky; /* Stick position to the top of the viewport */
+    top: 0; /* Align to the top of the viewport */
+    z-index: 1000; /* High z-index to keep it above other content */
+    background: rgba(0, 0, 0, 0.8); /* Optional: background to make text more readable over images */
+    padding: 4% 10%; /* Adjust padding as needed */
+    text-align: center; /* Keeps the text aligned as specified */
+    transition: 0.6s ease-in-out; /* Smooth transition for any changes */
+}
+
 
 #title {
     font-size: 40px;
