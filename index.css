@@ -67,6 +67,10 @@ body,html {
     font-size:50px;
     width:60%;
 }
+#subtitle {
+    font-size:30px;
+    width:60%;
+}
 #portfolio {
     width:80%;
     padding:2% 10%;
