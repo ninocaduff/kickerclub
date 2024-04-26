@@ -65,40 +65,47 @@ body, html {
 
 .member {
     flex: 0 1 calc(33.333% - 40px);
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.1);
     margin: 20px;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
     position: relative;
+    overflow: hidden; /* Prevents overflow of the absolutely positioned member-info */
+}
+
+.member-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of the parent */
 }
 
 .member-info {
     display: none;
-    position: absolute; /* Cover the entire member card */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 20px;
-    border-radius: 8px; /* Match parent's border-radius */
-}
-
-.member:hover .member-info {
-    display: flex; /* Flex to center the content */
+    border-radius: 8px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.member:hover h2, .member:hover p {
-    display: none; /* Hide the name and position */
+.member:hover .member-info {
+    display: flex;
+}
+
+.member-content:hover + .member-info {
+    display: flex; /* Show member-info only when member-content is hovered */
 }
 
 .member img {
@@ -112,6 +119,12 @@ body, html {
 .member h2, .member p {
     margin: 5px 0;
 }
+
+.member-content:hover h2, 
+.member-content:hover p {
+    display: none; /* Hide details when the content area is hovered */
+}
+
 
 /* Responsive design adjustments */
 @media (max-width: 900px) {
