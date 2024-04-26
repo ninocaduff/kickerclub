@@ -67,6 +67,22 @@ body, html {
     width: 300px;
 }
 
+.member-info {
+    display: none; /* Initially hide the additional info */
+    position: absolute; /* Position the info over the member image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+}
+
+.member:hover .member-info {
+    display: block; /* Display the additional info when hovering over the member */
+}
+
 .member img {
     width: 100px;
     height: 100px;
