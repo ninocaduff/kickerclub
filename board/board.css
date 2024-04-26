@@ -27,7 +27,7 @@ body, html {
     position: sticky; /* Stick position to the top of the viewport */
     top: 0; /* Align to the top of the viewport */
     z-index: 1000; /* High z-index to keep it above other content */
-    background: rgba(0, 0, 0, 0.8); /* Optional: background to make text more readable over images */
+    background: rgba(0, 0, 0, 1); /* Optional: background to make text more readable over images */
     padding: 4% 10%; /* Adjust padding as needed */
     text-align: center; /* Keeps the text aligned as specified */
     transition: 0.6s ease-in-out; /* Smooth transition for any changes */
